@@ -144,7 +144,7 @@
                         <div class="stat-label">AWS Services</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">5+</div>
+                        <div class="stat-number">6+</div>
                         <div class="stat-label">Key Projects</div>
                     </div>
                     <div class="stat-card">
@@ -354,7 +354,37 @@
             </div>
 
             <div class="projects-grid">
-                
+
+                <!-- Project 0: Distributed Event-Driven Payment & Ledger Platform -->
+                <div class="project-card" data-category="java">
+                    <div class="project-header-visual">
+                        <span class="project-visual-icon">💳</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Distributed Event-Driven Payment & Ledger Platform</h3>
+                        <p class="project-desc">
+                            Architected a distributed, event-driven payment processing engine handling asynchronous transaction workflows with Apache Kafka and the Saga Pattern for eventual consistency and automated compensations. Implemented an idempotent API design backed by Redis distributed locks (Redisson), preventing duplicate transactions and race conditions under concurrent network retries. Enforced zero-message-loss guarantees between database state and Kafka using the Transactional Outbox Pattern, processing financial transactions into an immutable, double-entry ledger. Built fault-tolerant inter-service communication with Resilience4j Circuit Breakers, fallback routines, and Kafka Dead-Letter Queues (DLQ) for failed transaction recovery. Monitored system health, latency percentiles (p95/p99), and consumer lag with Micrometer, Prometheus, and Grafana, deploying the entire stack on AWS EKS with Terraform (IaC).
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java 21</span>
+                            <span class="project-tag">Spring Boot 3</span>
+                            <span class="project-tag">Apache Kafka</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Redis</span>
+                            <span class="project-tag">Resilience4j</span>
+                            <span class="project-tag">Docker</span>
+                            <span class="project-tag">AWS EKS/RDS</span>
+                            <span class="project-tag">Terraform</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Debayanmondal/Payment-Ledger-Platform" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Code Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1: Fitness App -->
                 <div class="project-card" data-category="java">
                     <div class="project-header-visual">
@@ -438,7 +468,7 @@
                 <!-- Project 4: Apple Clone -->
                 <div class="project-card" data-category="cloud">
                     <div class="project-header-visual">
-                        <span class="project-visual-icon"></span>
+                        <span class="project-visual-icon"></span>
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Apple Clone Website</h3>
