@@ -363,7 +363,7 @@
                     <div class="project-body">
                         <h3 class="project-title">Distributed Event-Driven Payment & Ledger Platform</h3>
                         <p class="project-desc">
-                            Architected a distributed, event-driven payment processing engine handling asynchronous transaction workflows with Apache Kafka and the Saga Pattern for eventual consistency and automated compensations. Implemented an idempotent API design backed by Redis distributed locks (Redisson), preventing duplicate transactions and race conditions under concurrent network retries. Enforced zero-message-loss guarantees between database state and Kafka using the Transactional Outbox Pattern, processing financial transactions into an immutable, double-entry ledger. Built fault-tolerant inter-service communication with Resilience4j Circuit Breakers, fallback routines, and Kafka Dead-Letter Queues (DLQ) for failed transaction recovery. Monitored system health, latency percentiles (p95/p99), and consumer lag with Micrometer, Prometheus, and Grafana, deploying the entire stack on AWS EKS with Terraform (IaC).
+                            Event-driven payment processing system built with Spring Boot, Kafka, Redis, and Saga Pattern. Features idempotent APIs, Transactional Outbox, double-entry ledger, Resilience4j, DLQ-based recovery, and AWS EKS deployment with Terraform, Prometheus, and Grafana monitoring.
                         </p>
                         <div class="project-tags">
                             <span class="project-tag">Java 21</span>
